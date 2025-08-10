@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Investigative Idiot — Journal</title>
+  <meta name="description" content="Independent investigative articles on celebrities, athletes, and public figures." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__left">
+      <img src="assets/logo.svg" alt="" class="logo">
+      <a href="index.html" class="brand">Investigative Idiot</a>
+    </div>
+    <nav class="nav__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav__menu" id="menuBtn" aria-label="Open menu">☰</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero__badge">Independent • Fact-checked • Source-driven</div>
+    <h1>Investigations with <span class="glow">clarity</span> — not noise.</h1>
+   <p class="sub">An independent digital journal uncovering facts, stories, and hidden truths about celebrities, athletes, and other public figures — powered by research, clarity, and curiosity.</p>
+
+    <form class="search" onsubmit="return false;">
+      <input id="searchInput" type="search" placeholder="Search investigations… (e.g., endorsements, finances, timeline)" />
+    </form>
+  </section>
+
+  <main class="grid">
+    <!-- Featured card -->
+    <article class="card card--featured">
+      <a href="introduction.html" class="card__tag">Introduction</a>
+      <h2><a href="introduction.html">Introduction & Mission: How this site works</a></h2>
+      <p>What this journal is, how investigations are conducted, why the author remains private, and the legal/ethical ground rules that guide every piece.</p>
+      <div class="meta">
+        <span>6 min read</span>
+        <span>•</span>
+        <time>2025-08-10</time>
+      </div>
+    </article>
+
+    <!-- Sample posts - duplicate and edit these files -->
+    <article class="card">
+      <a href="sample-endorsements.html" class="card__tag">Case Study</a>
+      <h3><a href="sample-endorsements.html">Follow the money: sponsorship web of a top athlete</a></h3>
+      <p>A gentle example of mapping deals, timelines, and conflicts using only public sources.</p>
+      <div class="meta"><span>6 min read</span><span>•</span><time>2025-08-10</time></div>
+    </article>
+
+    <article class="card">
+      <a href="sample-timeline.html" class="card__tag">Timeline</a>
+      <h3><a href="sample-timeline.html">Public figure controversy: an exact timeline</a></h3>
+      <p>How to build event sequences with sources, quotes, and archive links.</p>
+      <div class="meta"><span>5 min read</span><span>•</span><time>2025-08-10</time></div>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Investigative Idiot. Built on GitHub Pages.</p>
+    <p class="tiny">Disclaimer: Articles are based on publicly available information and sources cited within each piece. No allegations are made beyond what sources support.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
